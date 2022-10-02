@@ -15,7 +15,9 @@ with open(FILE,'r') as f:
 			lineCounter += 1
 			if lineCounter == printline:
 				t.write(line)
+				t.write('<br>')
 				print(line, end='')
 			elif lineCounter > printline and lineCounter < printline + lineAmount:
 				t.write(line)
+				t.write('<br>')
 				print(line, end='')
