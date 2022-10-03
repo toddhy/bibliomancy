@@ -9,7 +9,9 @@ lineAmount = 10		# Number of lines to be printed
 
 #print(LINES)
 
-def bib(in_File, out_File):
+def bib(name):
+	in_File = read_dir+name+'.e'
+	out_File = write_dir+name+'.html'
 	LINES = sum(1 for line in open(in_File))	# Count number of lines
 	printline = random.randint(0, LINES - lineAmount) 	# Random line to begin printing at
 
@@ -23,7 +25,7 @@ def bib(in_File, out_File):
 					t.write(line)
 					t.write('<br>')
 					print(line, end='')
-bib(read_dir+FILE+'.e', write_dir+FILE+'.html')
+bib('aeneid')
 #if lineCounter == printline:
 #	t.write(line)
 #	t.write('<br>')
