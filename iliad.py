@@ -1,12 +1,9 @@
 #!/usr/bin/python3
 import random, sys, os, datetime
 
-#Variables
-today = datetime.datetime.today()
-import random, sys, os
 
 #Variables
->>>>>>> ffce19c122993d7ae09e28ec621ce54e134a35b7
+today = datetime.datetime.today()
 arguments = sys.argv
 num_args = len(arguments)
 #FILE = 'aeneid'	# Name of text file to read from
@@ -64,19 +61,3 @@ def choice():
 			bib_all()
 
 bib_all()
-if num_args not in range(1, 4):
-# argument out of range
-	print("Too many arguments.")
-elif num_args == 1:
-#0 arguments
-	print("Make a readout")
-elif num_args == 3:
-#2 arguments
-	lineAmount = int(arguments[2])
-	bib(arguments[1])
-else:
-# 1 argument
-	if arguments[1] != 'all':
-		bib(arguments[1])
-	else:
-		bib_all()
