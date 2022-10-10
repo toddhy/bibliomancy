@@ -34,7 +34,6 @@ def bib(name):
 					t.write('<br>')
 					t.write(line)
 					#print(line, end='')
-					print(line, end='')
 
 def bib_all():
 	### Loop through texts directory, run bib on each file
