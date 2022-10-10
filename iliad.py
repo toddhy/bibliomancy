@@ -1,10 +1,8 @@
 #!/usr/bin/python3
-<<<<<<< HEAD
 import random, sys, os, datetime
 
 #Variables
 today = datetime.datetime.today()
-=======
 import random, sys, os
 
 #Variables
@@ -37,12 +35,9 @@ def bib(name):
 				lineCounter += 1
 				if lineCounter >= printline and lineCounter < printline + lineAmount:
 					t.write('<br>')
-<<<<<<< HEAD
 					t.write(line)
 					#print(line, end='')
-=======
 					print(line, end='')
->>>>>>> ffce19c122993d7ae09e28ec621ce54e134a35b7
 
 def bib_all():
 	### Loop through texts directory, run bib on each file
@@ -50,7 +45,6 @@ def bib_all():
 		bib(text[0:-2])
 
 
-<<<<<<< HEAD
 def choice():
 	if num_args not in range(1, 4):
 	# argument out of range
@@ -70,7 +64,6 @@ def choice():
 			bib_all()
 
 bib_all()
-=======
 if num_args not in range(1, 4):
 # argument out of range
 	print("Too many arguments.")
@@ -87,4 +80,3 @@ else:
 		bib(arguments[1])
 	else:
 		bib_all()
->>>>>>> ffce19c122993d7ae09e28ec621ce54e134a35b7
